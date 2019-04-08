@@ -4,7 +4,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <img src={headerImage} alt="Header"/>
+      <img src={headerImage} alt="Header" width='100%'/>
     );
   }
 }
