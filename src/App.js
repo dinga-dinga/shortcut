@@ -5,11 +5,18 @@ class App extends React.Component {
 
   render() {
     return (
-	<React.Fragment>
+	<div>
       <Header/>	
-      <Sections/>
-    </React.Fragment>
+      {a()}
+    </div>
     );
   }
 }
+
+
+function a()
+{
+	return <Sections/>;
+}
+
 export default App;
