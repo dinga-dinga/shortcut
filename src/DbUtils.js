@@ -1,5 +1,4 @@
-var jsonText = `
-{
+var data = {
 	"Roles": [
 		"Software Developer",
 		"Project Engineer",
@@ -196,11 +195,8 @@ var jsonText = `
 			]
 		}
 	]
-}
+};
 
-`;
-
-var data = JSON.parse(jsonText);
 
 function getProjectsBySection(sectionNumber) {
 	var sectionProjects = [];
@@ -258,22 +254,3 @@ function getPeople(projectName) {
 
 	return null; 
 }
-
-
-
-function main() {
-	var sectionProjects = getProjectsBySection("12");
-	var people = getPeople("pid");
-
-	var krofmanProjects = getProjectsByID("123456789");
-
-	var outputText = "Number of projects:" + krofmanProjects.length;
-	for (projectIndex in krofmanProjects)
-	{
-		outputText += '\n' + krofmanProjects[projectIndex].ProjectName;
-	}
-
-	document.getElementById("demo").innerHTML = outputText;
-}
-
-main();
