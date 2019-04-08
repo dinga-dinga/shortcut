@@ -202,35 +202,51 @@ var jsonText = `
 
 var data = JSON.parse(jsonText);
 
-function getProjects(sectionNumber)
-{
+function getProjectsBySection(sectionNumber) {
 	var sectionProjects = [];
 
-	for (var projectIndex in data.Projects)
-	{
-		if (data.Projects[projectIndex].Section == sectionNumber)
-		{
+	for (var projectIndex in data.Projects) {
+		if (data.Projects[projectIndex].Section == sectionNumber) {
 			var projectInfo = data.Projects[projectIndex];
-			sectionProjects = sectionProjects.concat([projectInfo = data.Projects[projectIndex]]);
+			sectionProjects = sectionProjects.concat([projectInfo]);
 		}
 	}
 
 	return sectionProjects;
 }
 
-function getPeople(projectName)
-{
+function getProjectsByID(id) {
+	var projects = [];
+
+	var partOfProject = function(projectData, id) {
+		for (personIndex in projectData.People) {
+			if (projectData.People[personIndex].ID == id) {
+				return true;
+			}
+		}
+
+		return false;
+	};
+
+	for (var projectIndex in data.Projects) {
+		if (partOfProject(data.Projects[projectIndex], id)) {
+			var projectInfo = data.Projects[projectIndex];
+			projects = projects.concat([projectInfo]);
+		}
+	}
+
+	return projects;
+}
+
+function getPeople(projectName) {
 	var people = [];
 
-	for (var projectIndex in data.Projects)
-	{
-		if (data.Projects[projectIndex].ProjectName == projectName)
-		{
+	for (var projectIndex in data.Projects) {
+		if (data.Projects[projectIndex].ProjectName == projectName) {
 			var output = [];
 			var people = data.Projects[projectIndex].People;
 
-			for (var personIndex in people)
-			{
+			for (var personIndex in people) {
 				var id = people[personIndex].ID;
 				var personData = Object.assign({}, people[personIndex], data.People[id]);
 				output = output.concat([personData]);
@@ -245,26 +261,19 @@ function getPeople(projectName)
 
 
 
-function main()
-{
-	var sectionProjects = getProjects("12");
-	var outputText = "Number of projects:" + sectionProjects.length;
-	for (projectIndex in sectionProjects)
+function main() {
+	var sectionProjects = getProjectsBySection("12");
+	var people = getPeople("pid");
+
+	var krofmanProjects = getProjectsByID("123456789");
+
+	var outputText = "Number of projects:" + krofmanProjects.length;
+	for (projectIndex in krofmanProjects)
 	{
-		outputText += '\n' + sectionProjects[projectIndex].ProjectName;
+		outputText += '\n' + krofmanProjects[projectIndex].ProjectName;
 	}
 
 	document.getElementById("demo").innerHTML = outputText;
-
-
-	var people = getPeople("pid");
-	var outputText = "Number of people:" + people.length;
-	for (personIndex in people)
-	{
-		outputText += '             ' + people[personIndex].Name + people[personIndex].Role;
-	}
-
-	document.getElementById("demo").innerHTML = people;
 }
 
 main();
