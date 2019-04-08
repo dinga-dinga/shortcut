@@ -1,16 +1,5 @@
-#menu ul{
-  list-style: none;
-}
-.center-div
+body
 {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 400px;
-}
-#menu li{
-  display: inline;
+	background-image: url('./resources/SectionsBackground.png');
+	background-repeat:   no-repeat;
 }
