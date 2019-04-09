@@ -1,0 +1,57 @@
+.Page {
+ height: 100%;
+ 
+}
+
+.FilterBar {
+    height: 600px;
+    width:175px;
+    background-color: #f1f1f1;
+    font-family: "Assistant";
+    padding-top:17px;
+} 
+
+.FilterBar aa {
+    margin-left:27px;
+    font-weight: 800;
+    font-size: 15;
+    margin-bottom: 11px;
+}
+
+.FilterBar bb {
+    height: 28px;
+}
+
+.filter_btn {
+    width:89px;
+    height:25px;
+    font-family: "Assistant";
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15;
+    padding-top:6px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-left:42px;
+    margin-top:11px;
+    margin-bottom: -5px;
+    background-color: #a1a1a1;
+}
+
+.selected_filter_btn {
+    width:89px;
+    height:25px;
+    font-family: "Assistant";
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15;
+    padding-top:6px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-left:42px;
+    margin-top:11px;
+    margin-bottom: -5px;
+    background-color: #1a6ccc;
+}
