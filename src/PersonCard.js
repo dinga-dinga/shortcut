@@ -12,6 +12,4 @@ const PersonCard = ({person}) => (
     </div>
   );
 
-
-
 export default PersonCard;

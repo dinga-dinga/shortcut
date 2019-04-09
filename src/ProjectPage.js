@@ -1,8 +1,10 @@
 import React from 'react'
 import './ProjectPage.css'
+import './DbUtils'
 
-const ProjectPage = ({person}) => (
+const ProjectPage = () => (
     <div className="Page">
+    {RoleBottons(props)}
     <div class="FilterBar">
     <aa>Type</aa>
     <div class="filter_btn">
@@ -36,5 +38,15 @@ const ProjectPage = ({person}) => (
     </div>
     </div>
   );
+
+function RoleBottons(props) {
+    const Roles = props.Roles;
+    const listItems = Roles.map((role) =>
+      <li>{role}</li>
+    );
+    return (
+      <ul>{listItems}</ul>
+    );
+  }
 
 export default ProjectPage;
