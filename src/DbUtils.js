@@ -101,12 +101,100 @@ var data = {
 			"Image": "people/yarin.jpg",
 			"PhoneNumber": "0542859275",
 			"RleaseDate": "11/2022",
-			"IdfID": "123456789"
+			"IdfID": "8401859"
 		},
 		"638391728": {
 			"Name": "Isaac Garzon",
 			"Employer": "Adviser",
 			"PhoneNumber": "0551234567"
+		},
+		"849275939": {
+			"Name": "Itay Ovadia",
+			"Employer": "IDF",
+			"Image": "people/ovadia.jpg",
+			"PhoneNumber": "0531917491",
+			"RleaseDate": "05/2021",
+			"IdfID": "1059104"
+		},
+		"482952930": {
+			"Name": "Naor Dana",
+			"Employer": "IDF",
+			"Image": "people/naordana.jpg",
+			"PhoneNumber": "0589285029",
+			"RleaseDate": "05/2021",
+			"IdfID": "9274913"
+		},
+		"719859483": {
+			"Name": "DOVLET",
+			"Employer": "IDF",
+			"Image": "people/dovlet.jpg",
+			"PhoneNumber": "0545236851",
+			"RleaseDate": "11/2050",
+			"IdfID": "1653282"
+		},
+		"865165185": {
+			"Name": "Raz Jino",
+			"Employer": "IDF",
+			"Image": "people/razj.jpg",
+			"PhoneNumber": "0506235845",
+			"RleaseDate": "05/2023",
+			"IdfID": "8522658"
+		},
+		"156546561": {
+			"Name": "Nathan Shain",
+			"Employer": "IDF",
+			"Image": "people/nathan.jpg",
+			"PhoneNumber": "052652368",
+			"RleaseDate": "10/2019",
+			"IdfID": "1253282"
+		},
+		"513572581": {
+			"Name": "Yair Ladijinsky",
+			"Employer": "IDF",
+			"Image": "people/yair.jpg",
+			"PhoneNumber": "0506235986",
+			"RleaseDate": "05/2021",
+			"IdfID": "5236541"
+		},
+		"451285214": {
+			"Name": "Shay Maymon",
+			"Employer": "IDF",
+			"Image": "people/shay.jpg",
+			"PhoneNumber": "0521238523",
+			"RleaseDate": "03/2021",
+			"IdfID": "5263965"
+		},
+		"632598651": {
+			"Name": "Netay Gidnian",
+			"Employer": "IDF",
+			"Image": "people/netay.jpg",
+			"PhoneNumber": "0523265214",
+			"RleaseDate": "11/2020",
+			"IdfID": "4185274"
+		},
+		"316482613": {
+			"Name": "Itay Paritzky",
+			"Employer": "IDF",
+			"Image": "people/paritzky.jpg",
+			"PhoneNumber": "0541237412",
+			"RleaseDate": "09/2020",
+			"IdfID": "6541235"
+		},
+		"749612458": {
+			"Name": "Chuf Prager",
+			"Employer": "IDF",
+			"Image": "people/chuf.jpg",
+			"PhoneNumber": "0528513654",
+			"RleaseDate": "05/2020",
+			"IdfID": "6231542"
+		},
+		"852258514": {
+			"Name": "Nimrod Kaplan",
+			"Employer": "IDF",
+			"Image": "people/nimrod.jpg",
+			"PhoneNumber": "0521241250",
+			"RleaseDate": "05/2021",
+			"IdfID": "3025102"
 		}
 	},
 	"Projects": [
@@ -190,6 +278,117 @@ var data = {
 					"ID": "638391728",
 					"Role": "Firmware Developer",
 					"Features": ["Boot", "Server"],
+					"Start": "04/2019"
+				}
+			]
+		},
+		{
+			"ProjectName": "Bluetooth #1",
+			"Section": "15",
+			"Description": "First Bluetooth project",
+			"Image": "projects/bluetooth1_logo.jpg",
+			"People": [
+				{
+					"ID": "749612458",
+					"Role": "Team Leader",
+					"Start": "04/2019"
+				},
+				{
+					"ID": "852258514",
+					"Role": "Software Developer",
+					"Start": "04/2019"
+				}
+			]
+		},
+		{
+			"ProjectName": "Bluetooth #2",
+			"Section": "15",
+			"Description": "Second Bluetooth/GPS projects",
+			"Image": "",
+			"People": [
+			]
+		},
+		{
+			"ProjectName": "Radarasar MTZ",
+			"Section": "15",
+			"Description": "The greatest hit of the century is coming to our network",
+			"Image": "projects/radarasar.jpg",
+			"People": [
+				{
+					"ID": "316482613",
+					"Role": "Team Leader",
+					"Start": "04/2019"
+				},
+				{
+					"ID": "632598651",
+					"Role": "Project Engineer",
+					"Start": "04/2019"
+				}
+			]
+		},
+		{
+			"ProjectName": "Face Recognition",
+			"Section": "15",
+			"Description": "",
+			"Image": "",
+			"People": [
+			]
+		},
+		{
+			"ProjectName": "Automatic Version Document",
+			"Section": "15",
+			"Description": "I dont realy know what this is supposed to be",
+			"Image": "projects/versions_logo.jpg",
+			"People": [
+				{
+					"ID": "513572581",
+					"Role": "Team Leader",
+					"Start": "04/2019"
+				},
+				{
+					"ID": "451285214",
+					"Role": "Project Engineer",
+					"Start": "04/2019"
+				}
+			]
+		},
+		{
+			"ProjectName": "Installs Server",
+			"Section": "15",
+			"Description": "The current installs folder is not maintainable",
+			"Image": "",
+			"People": [
+				{
+					"ID": "849275939",
+					"Role": "Team Leader",
+					"Start": "04/2019"
+				},
+				{
+					"ID": "482952930",
+					"Role": "Software Developer",
+					"Start": "04/2019"
+				}
+			]
+		},
+		{
+			"ProjectName": "Duties Table",
+			"Section": "15",
+			"Description": "Automatic duties table algorithm",
+			"Image": "projects/duties_logo.jpg",
+			"People": [
+				{
+					"ID": "719859483",
+					"Role": "Section Officer",
+					"Start": "04/2019"
+				},
+				{
+					"ID": "865165185",
+					"Role": "Software Developer",
+					"Start": "04/2019"
+				},
+				{
+					"ID": "156546561",
+					"Role": "Software Developer",
 					"Start": "04/2019"
 				}
 			]
